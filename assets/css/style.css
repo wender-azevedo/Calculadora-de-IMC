@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+  --primary-color: #1f5eaf;
+  --secondary-color: #ff5202;
+  --white-color: #fff;
+  --gray-color: #707070;
+  --incorrect-color:#be3737; 
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-color);
+  font-family: 'Open sans', sans-serif;
+}
+
+.container {
+  max-width: 640px;
+  margin: 30px auto;
+  background-color: var(--white-color);
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+
+h1 {
+  color: var(--primary-color);
+  font-size: 28px;
+}
+
+p {
+  color: var(--gray-color);
+}
+
+label {
+  
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+form input {
+  display: block;
+  font-size: 14px;
+  height: 30px;
+  padding: 10px;
+  width: 150px;
+  margin: 5px 0;
+  border-radius: 10px;
+  border: 1px solid var(--gray-color);
+}
+
+form input:focus {
+  outline: 1px solid var(--gray-color);
+}
+
+.inputs {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+button {
+  display: block;
+  border: none;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  font-size: 18px;
+  font-weight: 700;
+  height: 35px;
+  width: 150px;
+  margin-top: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+button:hover {
+  background-color: var(--white-color);
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+}
+
+.paragrafo-resultado, .incorreto {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.incorreto {
+  background-color: var(--incorrect-color);
+}
+
+
